@@ -1,0 +1,107 @@
+body{
+    overflow: hidden;
+}
+
+.container-all{
+    width: 97.5%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.container-all h1{
+    font-family: 'Minecrafter', sans-serif;
+    font-size: 100px;
+    color: #fff;
+}
+
+.container-all p{
+    font-size: 20px;
+    font-family: 'SFUI', sans-serif;
+    width: 50%;
+    color: rgb(188, 188, 188);
+}
+
+.link:link{
+    border: none;
+}
+
+.container-all .button-container{
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+}
+
+.container-all .button-container button{
+    width: 170px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    font-family: 'SFUI', sans-serif;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* background: linear-gradient(rgb(0, 255, 157), rgb(17, 255, 0)); */
+
+.container-all .button-container button:nth-child(1):hover{
+  filter: brightness(110%);
+  text-shadow: 0px 0px 10px #fff,
+   0px 0px 20px #fff,
+   0px 0px 40px #fff;
+   width: 190px;
+}
+
+.container-all .button-container button:nth-child(2):hover{
+    filter: brightness(110%);
+    text-shadow: 0px 0px 10px #fff,
+    0px 0px 20px #fff,
+    0px 0px 40px #fff;
+   width: 190px;
+}
+
+.container-all .button-container button:nth-child(1){
+    background: linear-gradient(rgb(0, 55, 255), rgb(0, 247, 255));
+    background-size: 300%;
+    background-position: 300%;
+}
+
+.container-all .button-container button:nth-child(2){
+    background: linear-gradient(#f00, #ff0);
+    background-size: 300%;
+    background-position: 300%;
+    margin-left: 20px;
+}
+
+.container-logo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    z-index: -100;
+}
+
+logo{
+  font-size: 600px; 
+  margin-bottom: 20px; 
+  font-family: 'Minecrafter', sans-serif;
+  text-shadow: 0 0 10px rgb(0, 119, 255),
+   0 0 20px rgb(0, 119, 255),
+   0 0 40px rgb(0, 119, 255),
+   0 0 80px rgb(0, 119, 255),
+   0 0 160px rgb(0, 119, 255);
+  color: #fff;
+  z-index: -100;
+}

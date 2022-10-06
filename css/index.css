@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Minecrafter';
+    src: url('/fonts/Minecrafter.Reg.ttf');
+}
+
+@font-face {
+    font-family: 'Dragon';
+    src: url('/fonts/Dragon\ FREE.otf');
+}
+
+
+@font-face {
+    font-family: 'SFUI';
+    src: url('/fonts/SFNSDisplay-Semibold.otf');
+}
+
+
+body{
+    background: #202020;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient( #ff0, #f00);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-button{
+    background:#ffffff;
+    width: 50px;
+    height: 50px;
+}
+
+
+nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul{
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: #202020;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Minecrafter', sans-serif;
+}
+
+nav button{
+    width: 15%;
+    height: 80%;
+    border-radius: 10px;
+    border: none;
+    background: rgb(56, 129, 255);
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Minecrafter', sans-serif;
+}
+
+#first-container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#first-container img{
+    width: 300px;
+    height: 310px;
+    transform: translateY(70px);
+    scale:  2;
+}
+
+#first-container p{
+    font-size: 140px;
+    color: #202020;
+    font-family: 'Dragon', sans-serif;
+    transition: 1.5s ease-in-out;
+    text-align: center;
+}
+
+.background{
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.white{
+    color: #ffffff !important;
+}
+
+#two-container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#two-container img{
+    width: 300px;
+    height: 310px;
+    scale:  2;
+    transform: translateY(50px);
+    animation: animateImage 2s ease-in-out infinite;
+
+}
+
+@keyframes animateImage{
+    0%{filter: hue-rotate(0deg); transform: translateY(50px);}
+    50%{transform: translateY(100px);}
+    100%{filter: hue-rotate(360deg); transform: translateY(50px);}
+}
+
+#two-container p{
+    font-size: 140px;
+    transform: translateY(100px);
+    color: #202020;
+    font-family: 'Dragon', sans-serif;
+    transition: 1.5s ease-in-out;
+    text-align: center;
+}
+
+
+#three-container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 230vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#three-container svg{
+    width: 300px;
+    height: 310px;
+    scale:  2;
+    fill: #ffffff;
+    transform: translateY(50px);
+    animation: animateImage 2s ease-in-out infinite;
+
+}
+
+#three-container p{
+    font-size: 140px;
+    transform: translateY(100px);
+    color: #202020;
+    font-family: 'Dragon', sans-serif;
+    transition: 1.5s ease-in-out;
+    text-align: center;
+}
+
+a:link{
+    text-decoration: dotted;
+    color: rgb(83, 83, 255);
+}
+
+
+a:visited{
+    text-decoration: dotted;
+    color: rgb(112, 112, 251);
+}
+
+a{
+    transition: 0.1s ease-in-out;
+}
+
+a:hover{
+    border-bottom: 3px solid rgb(83, 83, 255);
+    text-rendering: optimizeSpeed
+}
