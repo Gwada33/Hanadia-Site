@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .container-all h1{
@@ -33,53 +33,61 @@ body{
 }
 
 .container-all .button-container{
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
     height: 20%;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .container-all .button-container button{
-    width: 170px;
-    height: 50px;
+    width: 350px;
+    height: 80px;
     border-radius: 20px;
+    padding-left: 40px;
     font-size: 30px;
     color: #fff;
     border: none;
     font-family: 'SFUI', sans-serif;
     transition: 0.5s ease-in-out;
     cursor: pointer;
+    margin-left: 130px;
+    background-color: #000;
 }
 
 /* background: linear-gradient(rgb(0, 255, 157), rgb(17, 255, 0)); */
 
-.container-all .button-container button:nth-child(1):hover{
-  filter: brightness(110%);
-  text-shadow: 0px 0px 10px #fff,
-   0px 0px 20px #fff,
-   0px 0px 40px #fff;
-   width: 190px;
+.first{
+    background-color: rgb(0, 119, 255);
+    margin-right: -100px;
+    transform: translateY(10px);
+    transition: 0.5s ease-in-out;
 }
 
-.container-all .button-container button:nth-child(2):hover{
-    filter: brightness(110%);
+.two{
+    background-color: rgb(0, 119, 255);
+    margin-bottom: -20px;
+    transform: translateY(50px);
+    margin-right: -100px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.first:hover{
+   background: rgb(0, 119, 255);
+   text-shadow: 0px 0px 10px #fff,
+   0px 0px 20px #fff,
+   0px 0px 40px #fff;
+}
+
+.two:hover{
+    background-color: rgb(0, 119, 255);
     text-shadow: 0px 0px 10px #fff,
     0px 0px 20px #fff,
     0px 0px 40px #fff;
-   width: 190px;
 }
 
-.container-all .button-container button:nth-child(1){
-    background: linear-gradient(rgb(0, 55, 255), rgb(0, 247, 255));
-    background-size: 300%;
-    background-position: 300%;
-}
-
-.container-all .button-container button:nth-child(2){
-    background: linear-gradient(#f00, #ff0);
-    background-size: 300%;
-    background-position: 300%;
-    margin-left: 20px;
-}
 
 .container-logo{
     width: 100%;
@@ -104,4 +112,115 @@ logo{
    0 0 160px rgb(0, 119, 255);
   color: #fff;
   z-index: -100;
+}
+
+button svg {
+    width: 200px;
+    height: 200px;
+    fill: #fff;
+    position: absolute;
+    left: 50px;
+    bottom: -165px;
+    scale: 1.4;
+}
+
+/*media-queries*/
+
+@media only screen and (max-width: 988px){
+    logo{
+        font-size: 350px;
+    }
+    .container-all h1{
+        font-size: 150px;
+        color: #fff;
+    }
+    .container-all p{
+        font-size: 20px;
+        font-family: 'SFUI', sans-serif;
+        width: 60%;
+        color: rgb(188, 188, 188);
+    }
+    
+}
+
+@media only screen and (max-width: 868px){
+    logo{
+        font-size: 320px;
+    }
+    .container-all h1{
+        font-size: 130px;
+        color: #fff;
+    }
+
+    .container-all p{
+        width: 60%;
+    }
+    
+}
+
+@media only screen and (max-width: 668px){
+    logo{
+        font-size: 300px;
+    }
+    .container-all h1{
+        font-size: 110px;
+        color: #fff;
+    }
+    .container-all p{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 568px){
+    logo{
+        transform: translateY(-1000px);
+    }
+    .container-all h1{
+        margin-right: 50px;
+        font-size: 90px;
+        color: #fff;
+    }
+    .container-all{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-all .button-container button{
+    margin-left: -150px;
+    }
+
+    .container-all p{
+        margin-right: 50px;
+    }
+    
+}
+
+@media only screen and (max-width: 468px){
+
+    .container-all .button-container button{
+        width: 300px;
+        height: 80px;
+    }
+    
+    .container-all h1{
+        font-size: 70px;
+    }
+
+    .chevron{
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 368px){
+    .container-all h1{
+        font-size: 50px;
+    }
+    .container-all p{
+        width: 60%;
+    }
+
+    .chevron{
+        margin-left: 50px;
+    }
 }
